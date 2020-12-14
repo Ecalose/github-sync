@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 star
     steps:
-      - uses: TobKed/github-forks-sync-action@master
-        with:
-          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-          upstream_repository: XIU2/CloudflareSpeedTest
-          target_repository: Ecalose/CloudflareSpeedTest
-          upstream_branch: master
-          target_branch: master
-          force: true
-          tags: true
+    - name: cloudflarespeedtest
+      uses: TobKed/github-forks-sync-action@master
+      with:
+        github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+        upstream_repository: XIU2/CloudflareSpeedTest
+        target_repository: Ecalose/CloudflareSpeedTest
+        upstream_branch: master
+        target_branch: master
+        force: true
+        tags: true
