@@ -13,8 +13,7 @@ jobs:
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           upstream_repository: XIU2/CloudflareSpeedTest
           target_repository: Ecalose/CloudflareSpeedTest
           upstream_branch: master
