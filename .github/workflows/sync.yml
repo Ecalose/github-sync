@@ -14,8 +14,8 @@ jobs:
       - uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          upstream_repository: srcrs/BilibiliTask
-          target_repository: ghaction/BilibiliTask
+          upstream_repository: XIU2/CloudflareSpeedTest
+          target_repository: Ecalose/CloudflareSpeedTest
           upstream_branch: master
           target_branch: master
           force: true
